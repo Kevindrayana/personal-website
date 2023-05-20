@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@octokit/rest': ^19.0.7
@@ -45,12 +45,12 @@ dependencies:
   contentlayer: 0.3.0
   date-fns: 2.29.3
   dotenv: 16.0.3
-  framer-motion: 8.5.4_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 8.5.4_react-dom@18.2.0+react@18.2.0
   kysely: 0.23.4
-  kysely-planetscale: 1.2.1_3b4ga6arylazwmj6lzyyulo5vq
-  next: 13.2.5-canary.16_biqbaboplfbrettd7655fr4n2y
-  next-auth: 4.19.0_wjxsymqnfii5p4j3fn3qqbjt3i
-  next-contentlayer: 0.3.0_wjxsymqnfii5p4j3fn3qqbjt3i
+  kysely-planetscale: 1.2.1_d878607811c2c19b313e5e718a2dddac
+  next: 13.2.5-canary.16_react-dom@18.2.0+react@18.2.0
+  next-auth: 4.19.0_b26f2c320d2a11d7f13b2b77080533da
+  next-contentlayer: 0.3.0_b26f2c320d2a11d7f13b2b77080533da
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-wrap-balancer: 0.4.0_react@18.2.0
@@ -69,7 +69,7 @@ devDependencies:
   '@types/react-dom': 18.0.10
   autoprefixer: 10.4.13_postcss@8.4.21
   postcss: 8.4.21
-  tailwindcss: 3.2.4_postcss@8.4.21
+  tailwindcss: 3.2.4
   typescript: 4.9.4
 
 packages:
@@ -177,9 +177,9 @@ packages:
         optional: true
     dependencies:
       '@effect-ts/core': 0.60.5
-      '@effect-ts/otel': 0.14.1_5u6uu645xsdgke5uan4tpxejte
-      '@effect-ts/otel-exporter-trace-otlp-grpc': 0.14.1_fmrvaem7w2f5ngmgqni7goprci
-      '@effect-ts/otel-sdk-trace-node': 0.14.1_hv2rnn6sth5zqevnyab6kulypq
+      '@effect-ts/otel': 0.14.1_ed3d4a7b9dbc866513b4037937dc8999
+      '@effect-ts/otel-exporter-trace-otlp-grpc': 0.14.1_2b2350119fb68bd699868351f339f112
+      '@effect-ts/otel-sdk-trace-node': 0.14.1_3d7516b7d299fb9812adc003e551787c
       '@js-temporal/polyfill': 0.4.3
       '@opentelemetry/api': 1.1.0
       '@opentelemetry/core': 1.5.0_@opentelemetry+api@1.1.0
@@ -202,7 +202,7 @@ packages:
       '@effect-ts/system': 0.57.5
     dev: false
 
-  /@effect-ts/otel-exporter-trace-otlp-grpc/0.14.1_fmrvaem7w2f5ngmgqni7goprci:
+  /@effect-ts/otel-exporter-trace-otlp-grpc/0.14.1_2b2350119fb68bd699868351f339f112:
     resolution: {integrity: sha512-eb6dJhVKnjS1v8afdPm+wuZ3JeX2Gt3GJA9Vw5D2aESE7wa3mrpElsNNbDXn6rhgyjZq3VWYY/NXVtLAFOQIbQ==}
     peerDependencies:
       '@effect-ts/core': ^0.60.2
@@ -212,14 +212,14 @@ packages:
       '@opentelemetry/sdk-trace-base': ^1.5.0
     dependencies:
       '@effect-ts/core': 0.60.5
-      '@effect-ts/otel': 0.14.1_5u6uu645xsdgke5uan4tpxejte
+      '@effect-ts/otel': 0.14.1_ed3d4a7b9dbc866513b4037937dc8999
       '@opentelemetry/api': 1.1.0
       '@opentelemetry/core': 1.5.0_@opentelemetry+api@1.1.0
       '@opentelemetry/exporter-trace-otlp-grpc': 0.31.0_@opentelemetry+api@1.1.0
       '@opentelemetry/sdk-trace-base': 1.5.0_@opentelemetry+api@1.1.0
     dev: false
 
-  /@effect-ts/otel-sdk-trace-node/0.14.1_hv2rnn6sth5zqevnyab6kulypq:
+  /@effect-ts/otel-sdk-trace-node/0.14.1_3d7516b7d299fb9812adc003e551787c:
     resolution: {integrity: sha512-j5ynRvd0H+Fp9aH/5NOtBd1ogNMpNB3r7uiXOKRPlfKUOtdx4KsCt2cPBjChMvyLstj8dkjtWE4loLSTYkWPuA==}
     peerDependencies:
       '@effect-ts/core': ^0.60.2
@@ -229,14 +229,14 @@ packages:
       '@opentelemetry/sdk-trace-node': ^1.5.0
     dependencies:
       '@effect-ts/core': 0.60.5
-      '@effect-ts/otel': 0.14.1_5u6uu645xsdgke5uan4tpxejte
+      '@effect-ts/otel': 0.14.1_ed3d4a7b9dbc866513b4037937dc8999
       '@opentelemetry/api': 1.1.0
       '@opentelemetry/core': 1.5.0_@opentelemetry+api@1.1.0
       '@opentelemetry/sdk-trace-base': 1.5.0_@opentelemetry+api@1.1.0
       '@opentelemetry/sdk-trace-node': 1.5.0_@opentelemetry+api@1.1.0
     dev: false
 
-  /@effect-ts/otel/0.14.1_5u6uu645xsdgke5uan4tpxejte:
+  /@effect-ts/otel/0.14.1_ed3d4a7b9dbc866513b4037937dc8999:
     resolution: {integrity: sha512-WtkxdoM1M8bl7F1mrSwBZQJAIaUXcupePrllL7iZnvSfUVhYXV98gRTV6EiVT+prX7rzCW4wPkF/XsyWbtMDtA==}
     peerDependencies:
       '@effect-ts/core': ^0.60.2
@@ -1069,7 +1069,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.4_postcss@8.4.21
+      tailwindcss: 3.2.4
     dev: true
 
   /@types/acorn/4.0.6:
@@ -1707,7 +1707,7 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion/8.5.4_biqbaboplfbrettd7655fr4n2y:
+  /framer-motion/8.5.4_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-xBVovXUIdpKvRvIPsrSTiyXZUYyct9zarzdVeyzv+V6DFsDpHIuppyOjDO8VM1fBspDn+rUU4ZFZ5yJxLmzebQ==}
     peerDependencies:
       react: ^18.0.0
@@ -2056,7 +2056,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /kysely-planetscale/1.2.1_3b4ga6arylazwmj6lzyyulo5vq:
+  /kysely-planetscale/1.2.1_d878607811c2c19b313e5e718a2dddac:
     resolution: {integrity: sha512-tPgyTSSkU0dwFbwSnWITU4VcuuQfsBA+HfGMYPFcUDBIjMDrzWE4Lbky7ue1NqqF58GyYPn9kOm2e61T9BVwww==}
     peerDependencies:
       '@planetscale/database': '*'
@@ -2717,7 +2717,7 @@ packages:
     hasBin: true
     dev: false
 
-  /next-auth/4.19.0_wjxsymqnfii5p4j3fn3qqbjt3i:
+  /next-auth/4.19.0_b26f2c320d2a11d7f13b2b77080533da:
     resolution: {integrity: sha512-56Pc/Ni0cxfrVDAz2KeWdj+VXvABbHF1grgFR4+ktXbRmKQOiMU9uyMwhasBQkbL+pRrWujO0Ib/bwkP0oZS4g==}
     peerDependencies:
       next: ^12.2.5 || ^13
@@ -2732,7 +2732,7 @@ packages:
       '@panva/hkdf': 1.0.2
       cookie: 0.5.0
       jose: 4.11.2
-      next: 13.2.5-canary.16_biqbaboplfbrettd7655fr4n2y
+      next: 13.2.5-canary.16_react-dom@18.2.0+react@18.2.0
       oauth: 0.9.15
       openid-client: 5.3.2
       preact: 10.11.3
@@ -2742,7 +2742,7 @@ packages:
       uuid: 8.3.2
     dev: false
 
-  /next-contentlayer/0.3.0_wjxsymqnfii5p4j3fn3qqbjt3i:
+  /next-contentlayer/0.3.0_b26f2c320d2a11d7f13b2b77080533da:
     resolution: {integrity: sha512-vt+RaD3nIgZ6oXadtZH19a1mpxvGEoiifdtmXqBSz4rHMRcMA1YZCuSWyj+P9uX7MDmIL6JT6QSp+hvTBMaxiw==}
     peerDependencies:
       next: ^12 || ^13
@@ -2751,7 +2751,7 @@ packages:
     dependencies:
       '@contentlayer/core': 0.3.0
       '@contentlayer/utils': 0.3.0
-      next: 13.2.5-canary.16_biqbaboplfbrettd7655fr4n2y
+      next: 13.2.5-canary.16_react-dom@18.2.0+react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     transitivePeerDependencies:
@@ -2760,7 +2760,7 @@ packages:
       - supports-color
     dev: false
 
-  /next/13.2.5-canary.16_biqbaboplfbrettd7655fr4n2y:
+  /next/13.2.5-canary.16_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-GDHJGQek0nAE7WyiEqI+EvXakj+XXOrwzuhCc84eeUSHrw9k7ZruUWonxXhoNLCm1NXx5z/SGnsyQUv3j6zsBw==}
     engines: {node: '>=14.6.0'}
     hasBin: true
@@ -3422,12 +3422,10 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /tailwindcss/3.2.4_postcss@8.4.21:
+  /tailwindcss/3.2.4:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
