@@ -16,9 +16,9 @@ export default function TechStack() {
   return (
     <>
       <h3 className="font-bold text-2xl font-serif">Tech Stack:</h3>
-      <div className="flex flex-col md:flex-row mt-5 md:space-x-12 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
+      <div className="flex flex-col md:flex-row md:space-x-12 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
         <div>
-          <p className="font-bold text-1xl font-serif">Frontend</p>
+          <p className="mt-3 font-bold text-1xl font-serif">Frontend</p>
           <ul>
             <li className="flex flex-row mt-2">
               <ReactIcon />
@@ -34,12 +34,12 @@ export default function TechStack() {
             </li>
             <li className="flex flex-row mt-2">
               <TypeScriptIcon />
-            TypeScript
+              TypeScript
             </li>
           </ul>
         </div>
         <div>
-          <p className="font-bold text-1xl font-serif">Backend</p>
+          <p className="mt-3 font-bold text-1xl font-serif">Backend</p>
           <ul>
             <li className="flex flex-row mt-2">
               <NodeIcon />
@@ -60,7 +60,7 @@ export default function TechStack() {
           </ul>
         </div>
         <div>
-          <p className="font-bold text-1xl font-serif">Database</p>
+          <p className="mt-3 font-bold text-1xl font-serif">Database</p>
           <ul>
             <li className="flex flex-row mt-2">
               <MySQLIcon />

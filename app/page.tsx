@@ -9,6 +9,9 @@ import {
 } from "components/icons";
 import { name, about, bio, avatar } from "lib/info";
 import TechStack from "components/techstack";
+import ExperienceButton from "components/buttons/experienceButton";
+import ProjectButton from "components/buttons/projectButton";
+import ResumeButton from "components/buttons/resumeButton";
 
 export const revalidate = 60;
 
@@ -72,37 +75,10 @@ export default async function HomePage() {
           {bio()}
         </p>
         <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
-          <li>
-            <Link
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
-              href="/experience">
-              <ArrowIcon />
-              <p className="h-7">Experiences</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
-              href="/projects">
-              <ArrowIcon />
-              <p className="h-7">Projects</p>
-            </Link>
-          </li>
-          <li>
-            <a
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
-              href="/cv.pdf"
-              download="resume">
-              <ArrowIcon />
-              <span className="h-7">Resume</span>
-            </a>
-          </li>
-          {/* <ResumeButton /> */}
+          <ExperienceButton />
+          <ProjectButton />
+          <ResumeButton />
         </ul>
-        <br />
-        <hr />
-        <br />
-        <TechStack />
       </section>
     </>
   );

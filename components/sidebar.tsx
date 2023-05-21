@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { LayoutGroup, motion } from "framer-motion";
+import ResumeButton from "./buttons/resumeButton";
 
 const navItems = {
   "/": {
@@ -14,6 +15,9 @@ const navItems = {
   },
   "/projects": {
     name: "Projects",
+  },
+  "/blog": {
+    name: "Blog",
   },
 };
 
@@ -61,6 +65,11 @@ export default function Navbar() {
                   </Link>
                 );
               })}
+              <span className="relative py-[5px] px-[10px] text-neutral-500">
+                <a href="/cv.pdf" download="resume">
+                  Resume
+                </a>
+              </span>
             </div>
           </nav>
         </LayoutGroup>
