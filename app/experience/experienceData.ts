@@ -7,7 +7,7 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    company_name: "One Financial Technology Limited",
+    company_name: "OneFi",
     website: "https://www.onefi.io/",
     job_desc: "Full-Stack Developer",
     time: "Jun 2023-Aug 2023",

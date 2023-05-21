@@ -1,4 +1,3 @@
-import ResumeButton from "components/buttons/resumeButton";
 import TechStack from "components/techstack";
 import experiences from "./experienceData";
 
@@ -10,11 +9,11 @@ export default function ExperiencePage() {
         {experiences.map((experience) => {
           return (
             <div className="m-5">
-              <strong className="text-purple-400">
-                <a href={experience.website} target="_blank">
+              <a href={experience.website} target="_blank">
+                <h1 className="font-bold text-2xl font-serif mt-3 text-purple-400">
                   {experience.company_name}
-                </a>
-              </strong>
+                </h1>
+              </a>
               <hr />
               <div className="flex flex-row justify-between">
                 <div className="text-left">{experience.job_desc}</div>
