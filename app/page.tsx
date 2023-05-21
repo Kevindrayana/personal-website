@@ -1,14 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
-import { getBlogViews, getTweetCount, getStarCount } from "lib/metrics";
-import {
-  ArrowIcon,
-  GitHubIcon,
-  GmailIcon,
-  LinkedinIcon,
-} from "components/icons";
+import { GitHubIcon, GmailIcon, LinkedinIcon } from "components/icons";
 import { name, about, bio, avatar } from "lib/info";
-import TechStack from "components/techstack";
 import ExperienceButton from "components/buttons/experienceButton";
 import ProjectButton from "components/buttons/projectButton";
 import ResumeButton from "components/buttons/resumeButton";
@@ -16,24 +8,13 @@ import ResumeButton from "components/buttons/resumeButton";
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let starCount, views, tweetCount;
-
-  try {
-    [starCount, views, tweetCount] = await Promise.all([
-      getStarCount(),
-      getBlogViews(),
-      getTweetCount(),
-    ]);
-  } catch (error) {
-    console.error(error);
-  }
-
   return (
     <>
       <section>
         <h1 className="font-bold text-3xl font-serif">{name}</h1>
         <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
-          {about()}
+          Hello, I'm Kevin, a penultimate student studying Computer Science in
+          the <span className="text-orange-300">University of Hong Kong</span>
         </p>
         <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
           <Image
@@ -72,7 +53,12 @@ export default async function HomePage() {
           </div>
         </div>
         <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
-          {bio()}
+          My interests include Web Development, Machine Learning, and
+          Algorithms. I have experience in Software Engineering and I am always
+          eager to learn and expand my knowledge. Please feel free to learn more
+          about my qualifications or get in touch with me if you have any
+          questions or would like to discuss potential collaborations.
+          {/* {bio()} */}
         </p>
         <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
           <ExperienceButton />
