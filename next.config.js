@@ -15,6 +15,7 @@ const nextConfig = {
     ],
   },
   experimental: {
+    mdxRs: true,
     appDir: true,
   },
   redirects() {
@@ -84,3 +85,6 @@ const securityHeaders = [
 ];
 
 module.exports = withContentlayer(nextConfig);
+
+const withMDX = require('@next/mdx')();
+module.exports = withMDX(nextConfig);
