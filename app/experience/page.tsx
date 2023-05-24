@@ -8,9 +8,9 @@ export default function ExperiencePage() {
       <div className="my-5 text-neutral-800 dark:text-neutral-200">
         {experiences.map((experience) => {
           return (
-            <div className="m-5">
+            <div>
               <a href={experience.website} target="_blank">
-                <h1 className="font-bold text-2xl font-serif mt-3 text-purple-400">
+                <h1 className="font-bold text-2xl font-serif mt-3 text-purple-400 hover:text-purple-500">
                   {experience.company_name}
                 </h1>
               </a>
