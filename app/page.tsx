@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { GitHubIcon, GmailIcon, LinkedinIcon } from "components/icons";
-import { name, about, bio, avatar } from "lib/info";
+import { name, avatar } from "content/info";
 import ExperienceButton from "components/buttons/experienceButton";
 import ProjectButton from "components/buttons/projectButton";
 import ResumeButton from "components/buttons/resumeButton";
@@ -14,7 +14,10 @@ export default async function HomePage() {
         <h1 className="font-bold text-3xl font-serif">{name}</h1>
         <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
           Hello, I'm Kevin, a penultimate student studying Computer Science in
-          the <span className="text-orange-300">University of Hong Kong</span>
+          the{" "}
+          <span className="text-orange-300 hover:text-orange-400">
+            University of Hong Kong
+          </span>
         </p>
         <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
           <Image
@@ -53,12 +56,12 @@ export default async function HomePage() {
           </div>
         </div>
         <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
-          My interests include Web Development, Machine Learning, and
-          Algorithms. I have experience in Software Engineering and I am always
-          eager to learn and expand my knowledge. Please feel free to learn more
-          about my qualifications or get in touch with me if you have any
-          questions or would like to discuss potential collaborations.
-          {/* {bio()} */}
+          My interests include{" "}
+          <strong>Web Development, Machine Learning, and Algorithms</strong>. I
+          have experience in Software Engineering and I am always eager to learn
+          and expand my knowledge. Please feel free to learn more about my
+          qualifications or get in touch with me if you have any questions or
+          would like to discuss potential collaborations.
         </p>
         <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
           <ExperienceButton />
