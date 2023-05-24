@@ -15,7 +15,9 @@ import {
 export default function TechStack() {
   return (
     <>
-      <h3 className="font-bold text-2xl font-serif">Tech Stack:</h3>
+      <h3 className="font-bold text-2xl font-serif text-blue-300">
+        Tech Stack:
+      </h3>
       <div className="flex flex-col md:flex-row md:space-x-12 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
         <div>
           <p className="mt-3 font-bold text-1xl font-serif">Frontend</p>
