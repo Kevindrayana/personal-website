@@ -1,9 +1,9 @@
 "use client";
 
-import MazeSolver from "../../../content/projects/MazeSolver/MazeSolver.mdx";
-import PhoneShop from "../../../content/projects/PhoneShop/PhoneShop.mdx";
-import BigTwoGame from "../../../content/projects/BigTwoGame/BigTwoGame.mdx";
-import INotes from "../../../content/projects/iNotes/iNotes.mdx";
+import MazeSolver from "../../../content/projects/MazeSolver.mdx";
+import PhoneShop from "../../../content/projects/PhoneShop.mdx";
+import BigTwoGame from "../../../content/projects/BigTwoGame.mdx";
+import INotes from "../../../content/projects/iNotes.mdx";
 import ProjectButton from "components/buttons/projectButton";
 
 export default function Project({ params }) {
