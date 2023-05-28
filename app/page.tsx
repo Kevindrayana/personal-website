@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { GitHubIcon, GmailIcon, LinkedinIcon } from "components/icons";
-import { name, avatar } from "content/info";
 import ExperienceButton from "components/buttons/experienceButton";
 import ProjectButton from "components/buttons/projectButton";
 import ResumeButton from "components/buttons/resumeButton";
+import headshot from '../public/headshot.jpeg'
+
 
 export const revalidate = 60;
 
@@ -11,7 +12,7 @@ export default async function HomePage() {
   return (
     <>
       <section>
-        <h1 className="font-bold text-3xl font-serif">{name}</h1>
+        <h1 className="font-bold text-3xl font-serif">Kevin Indrayana Istimur</h1>
         <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
           Hello, I'm Kevin, a penultimate student studying Computer Science in
           the{" "}
@@ -21,9 +22,9 @@ export default async function HomePage() {
         </p>
         <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
           <Image
-            alt={name}
+            alt="Kevin Indrayana Istimur"
             className="rounded-full"
-            src={avatar}
+            src={headshot}
             placeholder="blur"
             width={100}
             priority
