@@ -5,17 +5,22 @@ Maze Solver Pathfinding Visualizer is a personal project that implements Dijkstr
 ## Features of Maze Solver
 
 - Generate random mazes
-- Build maze manually by clicking the mouse
-- Visualize the algorithm finding the shortest path in real time
+- Build maze manually by clicking the mouse or randomly by clicking *generate walls* button
+- Visualize the algorithm finding the shortest path
 - Change the speed of visualization
 - Reset the maze to generate a new one
 
-## How Maze Solver works
+## How the Algorithm Works
 
-1. Marks the starting node as "open" and calculates distance from start to itself as zero.
-2. Checks all unvisited neighboring nodes, calculates distance and marks them as "open".
-3. Continues this until it finds the ending node.
-4. The path is then traced back from the end node to the start node.
+1. Assign a distance value of 0 to the starting node and infinity (or a really large number) to all other nodes.
+2. Create an unvisited set of nodes and add all nodes to it.
+3. While the unvisited set is not empty, select the node with the shortest known distance as the current node.
+4. Visit all of the neighbors of the current node and calculate their tentative distances from the starting node by adding the distance from the current node to the neighbor's distance value.
+5. If the tentative distance is less than the neighbor's current distance value, update the neighbor's distance value to the tentative distance.
+6. Mark the current node as visited and remove it from the unvisited set.
+7. Repeat steps 3-6 until the destination node is visited or there are no more unvisited nodes.
+8. Once the destination node is visited, the shortest path from the starting node to the destination node can be obtained by backtracking from the destination node to the starting node using the minimum distance values.
+9. Return the shortest path.
 
 ## Conclusion
 
